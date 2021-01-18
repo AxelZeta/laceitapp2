@@ -1,0 +1,155 @@
+/* INIZIO POSIZIONAMENTO PAGINA */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #F8F9FA;
+}
+section{
+    padding: 80px 0;
+}
+
+
+
+/* FINE POSIZIONAMENTO PAGINA */
+
+/* INIZIO TITOLO "LE ULTIME NEWS" */
+section .title{
+    position: relative;
+    text-align: center;
+    color: #212529;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+section .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #AA3647;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    padding: 5px;
+    background: whitesmoke;
+    transform: translateX(-50%);
+}
+/* FINE TITOLO  */
+
+
+
+/* Qui inizia il codice da cambiare ad ogni aggiornamento delle notizie */
+/* Per cambiare lo sfondo della notizia, cambiare url immagine inserendo dentro le virgolette il link */
+
+.uno{
+    background: url("");
+}
+.due{
+    background: url("");
+}
+.tre{
+    background: url("");
+}
+.quattro {
+    background: url("");
+}
+.cinque{
+    background: url("");
+}
+.sei {
+    background: url("");
+}
+
+/* non cambiare prossime linee */
+ .uno, .due, .tre, .quattro, .cinque, .sei{
+    background: #ed9aa6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sei {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* FINE SFONDO NOTIZIE */ 
+
+/* INIZIO CAROSELLO */
+
+.news .carousel .card{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    border-top: solid 1px #AA3647;
+    border-bottom: solid 1px #AA3647;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.news .carousel .card a{
+    font-size: 18px;
+    padding: 10px 44px;
+    margin-top: 20px;
+    border-radius: 40px;
+    color: #F8F9FA;
+    background-color: #AA3647;
+    transition: transform 0.2s linear 0s;
+}
+.news .carousel .card a:hover {
+    transform: translateY(-5px);
+}
+
+.news .carousel .card .testo{
+    font-size: 45px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
+/* INIZIO PUNTI PER SLIDESHOW */
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border: 2px solid #212529!important;
+    transition: all 0.3s ease;
+    /* se si vuole pallini al posto di quadrato togliere il commento al codice sotto */
+    border-radius: 50%;
+}
+.owl-dot.active{
+    width: 35px;
+    /* se si vuole pallini al posto di quadrato togliere il commento al codice sotto */
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: #212529!important;
+}
+/* FINE PUNTI PER SLIDESHOW */
